@@ -24,7 +24,9 @@ const HomePage = () => {
 
   async function getDataFromDick(searchTerm) {
     try {
-      const dataFromDick = await axios.get(`/api/${searchTerm}`);
+      const dataFromDick = await axios.get(
+        `https://api.dictionaryapi.dev/api/v2/entries/en/${searchTerm}`
+      );
       setData(dataFromDick.data);
     } catch (error) {
       setData([]);

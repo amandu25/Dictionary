@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Meaning = ({ term }) => {
-  console.log(term);
+  // console.log(term);
   // if (!term || term.length === 0) {
   //   return <p>No data available</p>;
   // }
